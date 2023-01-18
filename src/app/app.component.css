@@ -1,23 +1,60 @@
 body, html {
     height: 100%;
-    margin: 0;
   }
   
   .bg {
     /* The image used */
     background-image: url("../assets/first_bg.png");
-    background-repeat: repeat;
     /* Full height */
     height: 100%; 
   
     /* Center and scale the image nicely */
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
-  .test_img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 100px; 
-    width: auto;
+  .main_calender {
+    border: 5px dashed black;
+    padding: 50px;
+    background: #dbdbdb;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-position: center;
+    position: relative;
+    width: 80%;
+    margin:0 auto;
+  }
+
+  .day_in_calender{
+    border: 5px dashed black;
+    padding: 25px;
+    background: #ad92b3;
+    background-origin: padding-box;
+    position: absolute;
     height: auto;
+    top: 8px;
+    left: 16px;
+    width: 13%;
+    margin:0 auto;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 60px);
+  }
+  
+  .grid-containter{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #dbdbdb;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .grid-item{
+    background: #ad92b3;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align:top left;
   }

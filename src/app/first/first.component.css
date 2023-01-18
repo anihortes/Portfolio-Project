@@ -13,3 +13,15 @@ body, html {
     /* Center and scale the image nicely */
     background-position: center;
   }
+
+  .main_calender {
+    border: 5px dashed black;
+    padding: 50px;
+    background: #dbdbdb;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-position: center;
+    position: center;
+    width: 80%;
+    margin:0 auto;
+  }
