@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("../assets/first_bg.png");
+    background-repeat: repeat;
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+  }
+
+  .test_img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 100px; 
+    width: auto;
+    height: auto;
+  }
