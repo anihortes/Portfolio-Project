@@ -1,0 +1,68 @@
+body,
+html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url('../../assets/images/first_bg.png');
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro1{
+  color:blue;
+  text-align: center;
+  padding: 10px;
+  font-size: 100px;
+ }
+ 
+
+/* container for number of the month */
+.grid-container2{
+  display: grid;
+  grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% ;
+  background-color: #dbdbdb;
+  justify-items: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  padding: 10px;
+}
+
+.grid-item{
+  background: #ad92b3;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  text-align:top left;
+}
+
+/* container for days of the week */
+.grid-container1{
+  display: grid;
+  grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% ;
+  background-color: #dbdbdb00;
+  justify-items: center;
+  margin: 0 auto;
+  margin-bottom: -10px;
+  width: 78.5%;
+  height: 5%;
+  border: none;
+}
+.day-of-week{
+  font-size: 30px;
+  text-align: center;  
+  vertical-align: middle;
+  line-height: 200%;  
+  background: #96dfcf;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+}
