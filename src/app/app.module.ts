@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { JanuaryComponent } from './january/january.component';
 import { FebuaryComponent } from './febuary/febuary.component';
+import { MarchComponent } from './march/march.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JanuaryComponent,
-    FebuaryComponent
+    FebuaryComponent,
+    MarchComponent
   ],
   imports: [
     BrowserModule,
