@@ -25,12 +25,13 @@ html {
 /* container for number of the month */
 .grid-container2{
   display: grid;
-  grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% ;
+  position: center;
+  grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
   background-color: #dbdbdb;
   justify-items: center;
   margin: 0 auto;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 40%;
   padding: 10px;
 }
 
@@ -39,44 +40,8 @@ html {
   border: 1px solid black;
   padding: 10px;
   font-size: 30px;
-  width: 100%;
-  height: 100%;
-  text-align:top left;
-}
-
-/* container for days of the week */
-.grid-container1{
-  display: grid;
-  grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% ;
-  background-color: #dbdbdb00;
-  justify-items: center;
-  margin: 0 auto;
-  margin-bottom: -10px;
-  width: 78.5%;
-  height: 5%;
-  border: none;
-}
-.day-of-week{
-  font-size: 30px;
   text-align: center;  
-  vertical-align: middle;
-  line-height: 200%;  
-  background: #96dfcf;
-  border: 2px solid black;
-  width: 100%;
-  height: 100%;
-}
-
-.next-month-box{
-  background-color: rgba(92, 73, 73, 0.603);
-  position:relative;
-}
-
-.next-monh-text{
-  font-size: 40px;
-  background-color: rgba(165, 165, 165, 0.603);
-  -webkit-text-fill-color: rgb(255, 0, 0);
-  position:absolute;
-  bottom:0;
-  right: 20px;
+  vertical-align: text-bottom;
+  width: 90%;
+  height: 90%;
 }
