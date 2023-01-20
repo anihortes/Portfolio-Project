@@ -7,7 +7,7 @@ import { MarchComponent } from './march/march.component';
 const routes: Routes = [
   {path: 'january',component: JanuaryComponent },
   {path: 'febuary', component: FebuaryComponent },
-  {path: 'march', component: MarchComponent },
+  {path: 'march', component: FebuaryComponent },
 
 ];
 
