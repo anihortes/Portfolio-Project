@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { JanuaryComponent } from './january/january.component';
-import { FebuaryComponent } from './febuary/febuary.component';
-import { MarchComponent } from './march/march.component';
+import { JanuaryComponent } from './month/january/january.component';
+import { FebuaryComponent } from './month/febuary/febuary.component';
+import { MarchComponent } from './month/march/march.component';
 
 const routes: Routes = [
-  {path: 'january',component: JanuaryComponent },
-  {path: 'febuary', component: FebuaryComponent },
-  {path: 'march', component: FebuaryComponent },
+  {path: 'month/january',component: JanuaryComponent },
+  {path: 'month/febuary', component: FebuaryComponent },
+  {path: 'month/march', component: MarchComponent },
 
 ];
 

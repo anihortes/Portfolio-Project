@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { JanuaryComponent } from './january/january.component';
-import { FebuaryComponent } from './febuary/febuary.component';
-import { MarchComponent } from './march/march.component';
+import { JanuaryComponent } from './month/january/january.component';
+import { FebuaryComponent } from './month/febuary/febuary.component';
+import { MarchComponent } from './month/march/march.component';
 import { MonthComponent } from './month/month.component';
 
 @NgModule({

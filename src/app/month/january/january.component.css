@@ -4,7 +4,7 @@ html {
 }
 
 .bg {
-  background-image: url('../../assets/images/first_bg.png');
+  background-image: url('../../../assets/images/first_bg.png');
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;

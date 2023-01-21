@@ -1,0 +1,47 @@
+body,
+html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url('../../assets/images/first_bg.png');
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro1{
+  color:blue;
+  text-align: center;
+  padding: 10px;
+  font-size: 100px;
+ }
+ 
+
+/* container for number of the month */
+.grid-container2{
+  display: grid;
+  position: center;
+  grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+  background-color: #dbdbdb;
+  justify-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 40%;
+  padding: 10px;
+}
+
+.grid-item{
+  background: #ad92b3;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;  
+  vertical-align: text-bottom;
+  width: 90%;
+  height: 90%;
+}
