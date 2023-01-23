@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { JanuaryComponent } from './month/january/january.component';
-import { FebuaryComponent } from './month/febuary/febuary.component';
-import { MarchComponent } from './month/march/march.component';
+import { JanuaryComponent } from './month/01_january/january.component';
+import { FebuaryComponent } from './month/02_febuary/febuary.component';
+import { MarchComponent } from './month/03_march/march.component';
+import { AprilComponent } from './month/04_april/april.component';
 import { MonthComponent } from './month/month.component';
 
 const routes: Routes = [
@@ -10,6 +11,8 @@ const routes: Routes = [
   {path: 'month/january',component: JanuaryComponent },
   {path: 'month/febuary', component: FebuaryComponent },
   {path: 'month/march', component: MarchComponent },
+  {path: 'month/april', component: AprilComponent },
+
 
 ];
 
@@ -18,3 +21,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule { }
+ 

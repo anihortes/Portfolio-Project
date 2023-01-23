@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { JanuaryComponent } from './month/january/january.component';
-import { FebuaryComponent } from './month/febuary/febuary.component';
-import { MarchComponent } from './month/march/march.component';
+import { JanuaryComponent } from './month/01_january/january.component';
+import { FebuaryComponent } from './month/02_febuary/febuary.component';
+import { MarchComponent } from './month/03_march/march.component';
 import { MonthComponent } from './month/month.component';
+import { AprilComponent } from './month/04_april/april.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MonthComponent } from './month/month.component';
     JanuaryComponent,
     FebuaryComponent,
     MarchComponent,
-    MonthComponent
+    MonthComponent,
+    AprilComponent
   ],
   imports: [
     BrowserModule,
