@@ -5,7 +5,7 @@ import { FebuaryComponent } from './month/02_febuary/febuary.component';
 import { MarchComponent } from './month/03_march/march.component';
 import { AprilComponent } from './month/04_april/april.component';
 import { MayComponent } from './month/05_may/may.component';
-//import { JuneComponent } from './month/06_june/june.component';
+import { JuneComponent } from './month/06_june/june.component';
 //import { JulyComponent } from './month/07_july/july.component';
 //import { AugustComponent } from './month/08_august/august.component';
 //import { SeptemberComponent } from './month/09_september/september.component';
@@ -21,7 +21,13 @@ const routes: Routes = [
   {path: 'month/march', component: MarchComponent },
   {path: 'month/april', component: AprilComponent },
   {path: 'month/may', component: MayComponent },
-
+  {path: 'month/june', component: JuneComponent },
+  //{path: 'month/june', component: JulyComponent },
+  //{path: 'month/august', component: AugustComponent },
+  //{path: 'month/september', component: SeptemberComponent },
+  //{path: 'month/october', component: OctoberComponent },
+  //{path: 'month/november', component: NovomberComponent },
+  //{path: 'month/december', component: DecemberComponent },
 ];
 
 @NgModule({

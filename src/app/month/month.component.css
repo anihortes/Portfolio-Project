@@ -36,6 +36,7 @@ html {
 }
 
 .grid-item{
+  
   background: #ad92b3;
   border: 1px solid black;
   padding: 10px;
@@ -44,4 +45,8 @@ html {
   vertical-align: text-bottom;
   width: 90%;
   height: 90%;
+}
+
+.grid-item:hover{
+  background: #aabbff;
 }

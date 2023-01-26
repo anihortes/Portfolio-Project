@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MonthComponent } from './month.component';
+import { JuneComponent } from './june.component';
 
-describe('MonthComponent', () => {
-  let component: MonthComponent;
-  let fixture: ComponentFixture<MonthComponent>;
+describe('JuneComponent', () => {
+  let component: JuneComponent;
+  let fixture: ComponentFixture<JuneComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MonthComponent ]
+      declarations: [ JuneComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MonthComponent);
+    fixture = TestBed.createComponent(JuneComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -21,4 +21,3 @@ describe('MonthComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-

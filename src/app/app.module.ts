@@ -9,6 +9,7 @@ import { MarchComponent } from './month/03_march/march.component';
 import { MonthComponent } from './month/month.component';
 import { AprilComponent } from './month/04_april/april.component';
 import { MayComponent } from './month/05_may/may.component';
+import { JuneComponent } from './month/06_june/june.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MayComponent } from './month/05_may/may.component';
     MarchComponent,
     MonthComponent,
     AprilComponent,
-    MayComponent
+    MayComponent,
+    JuneComponent
   ],
   imports: [
     BrowserModule,

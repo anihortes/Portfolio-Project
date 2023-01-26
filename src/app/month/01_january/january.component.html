@@ -3,50 +3,191 @@
     <a href="../../" style="color:black">HOME</a>
     <router-outlet></router-outlet> 
   </font>
-  <div class="intro1">
+  <div class="month-header">
     <img src="../../../assets/images/months/01_jan.png" height="100px">
   </div>
-  <div class="grid-container1">
-    <div class="day-of-week">SUN</div>
-    <div class="day-of-week">MON</div>
-    <div class="day-of-week">TUES</div>
-    <div class="day-of-week">WED</div>
-    <div class="day-of-week">THURS</div>
-    <div class="day-of-week">FRI</div>
-    <div class="day-of-week">SAT</div>
+ 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Enter Text Below</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="grid-container2" position='center'>
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-    <div class="grid-item">6</div>
-    <div class="grid-item">7</div>
-    <div class="grid-item">8</div>
-    <div class="grid-item">9</div>
-    <div class="grid-item">10</div>
-    <div class="grid-item">11</div>
-    <div class="grid-item">12</div>
-    <div class="grid-item">13</div>
-    <div class="grid-item">14</div>
-    <div class="grid-item">15</div>
-    <div class="grid-item">16</div>
-    <div class="grid-item">17</div>
-    <div class="grid-item">18</div>
-    <div class="grid-item">19</div>
-    <div class="grid-item">20</div>
-    <div class="grid-item">21</div>
-    <div class="grid-item">22</div>
-    <div class="grid-item">23</div>
-    <div class="grid-item">24</div>
-    <div class="grid-item">25</div>
-    <div class="grid-item">26</div>
-    <div class="grid-item">27</div>
-    <div class="grid-item">28</div>
-    <div class="grid-item">29</div>
-    <div class="grid-item">30</div>
-    <div class="grid-item">31</div>
+
+  <div class="macro-weekdays-container">
+    <div class="micro-weekdays-container">SUN</div>
+    <div class="micro-weekdays-container">MON</div>
+    <div class="micro-weekdays-container">TUES</div>
+    <div class="micro-weekdays-container">WED</div>
+    <div class="micro-weekdays-container">THURS</div>
+    <div class="micro-weekdays-container">FRI</div>
+    <div class="micro-weekdays-container">SAT</div>
+  </div>
+  <div class="macro-month-container" position='center'>
+    <div class="micro-month-container">1
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">2
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">3
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">4
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">5
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">6
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">7
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">8
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">9
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">10
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">11
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">12
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">13
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">14
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">15
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">16
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">17
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">18
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">19
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">20
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">21
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">22
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">23
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">24
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">25
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">26
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">27
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">28
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">29
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">30
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" vertical-align="middle">
+        Edit Notes
+      </button>
+    </div>
+    <div class="micro-month-container">31
+
+    </div>
   </div>  
   <div class="next-month-box">
     <div class="month-text"><a href="./month/febuary/">NEXT</a></div>
