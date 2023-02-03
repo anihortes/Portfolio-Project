@@ -75,7 +75,11 @@ const users: User[] = [
   },
 ]
 
+router.post('note', createNote)
+router.delete('/note/:noteID', deleteUser)
+router.get('/note/:noteID', getNote)
 router.get('/notes', getNotes)
+router.put('/note/:noteID', updateNote)
 
 
 router.post('/user', createUser)
@@ -85,6 +89,17 @@ router.get('/users', getUsers)
 router.put('/user/:userID', updateUser)
 
 /** List of HTTP response status codes https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses */
+
+async function createNote(request: Request, response: Response, next: NextFunction){
+  const note = request.body as Note
+  const randomID = parseInt(crypto.randomUUID())
+
+  note.id = randomID
+
+  notes.push(note)
+
+  response.status(201).json(note)
+}
 
 async function createUser(request: Request, response: Response, next: NextFunction) {
   const user = request.body as User
@@ -97,6 +112,21 @@ async function createUser(request: Request, response: Response, next: NextFuncti
   response.status(201).json(user)
 }
 
+async function deleteNote(request: Request, response: Response, next: NextFunction){
+  const noteID = parseInt(request.params.noteID)
+  const noteIndex = notes.findIndex(note => note.id == noteID)
+
+  if (noteID > -1){
+    notes.splice(noteIndex, 1)
+
+    response.status(200).send()
+  }
+  else{
+    response.status(404).send()
+  }
+
+}
+
 async function deleteUser(request: Request, response: Response, next: NextFunction) {
   const userID = parseInt(request.params.userID)
   const userIndex = users.findIndex(user => user.id == userID)
@@ -105,6 +135,17 @@ async function deleteUser(request: Request, response: Response, next: NextFuncti
     users.splice(userIndex, 1)
 
     response.status(200).send()
+  } else {
+    response.status(404).send()
+  }
+}
+
+async function getNote(request: Request, response: Response, next: NextFunction){
+  const noteID = parseInt(request.params.noteID)
+  const note: Note = notes.find(note => note.id == noteID)
+
+  if (note) {
+    response.status(200).json(note)
   } else {
     response.status(404).send()
   }
@@ -121,12 +162,27 @@ async function getUser(request: Request, response: Response, next: NextFunction)
   }
 }
 
+async function getNotes(request: Request, response: Response, next: NextFunction) {
+  response.status(200).json(notes)
+}
+
+
 async function getUsers(request: Request, response: Response, next: NextFunction) {
   response.status(200).json(users)
 }
 
-async function getNotes(request: Request, response: Response, next: NextFunction) {
-  response.status(200).json(notes)
+async function updateNote(request: Request, response: Response, next: NextFunction) {
+  const noteID = parseInt(request.params.noteID)
+  const noteIndex = notes.findIndex(note => note.id == noteID)
+  const note = request.body as Note
+
+  if (noteIndex > -1) {
+    notes[noteIndex] = note
+
+    response.status(200).send()
+  } else {
+    response.status(404).send()
+  }
 }
 
 async function updateUser(request: Request, response: Response, next: NextFunction) {

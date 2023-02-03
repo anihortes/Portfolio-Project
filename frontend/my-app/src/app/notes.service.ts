@@ -18,13 +18,37 @@ type Note = {
 })
 export class NotesService {
   private _httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' })}
-  constructor(
-   private _http: HttpClient
-  ){}
+  constructor(private _http: HttpClient){}
+
+
+
+  createNote(note: Note) {
+    const url = `http://localhost:3000/note/`
+
+    return this._http.post<Note>(url, note, options)
+  }
+
+  deleteNote(note: Note) {
+    const url = `http://localhost:3000/note/${note.id}`
+
+    return this._http.delete<number>(url, options)
+  }
+
+  getNote(noteID: number) {
+    const url = `http://localhost:3000/note/${noteID}`
+
+    return this._http.get<Note>(url, options)
+  }
 
   getNotes() {
     const url = `http://localhost:3000/notes/`
     return this._http.get<Note[]>(url, options)
+  }
+
+  updateNote(note: Note) {
+    const url = `http://localhost:3000/note/${note.id}`
+
+    return this._http.put<number>(url, note, options)
   }
 
 }
