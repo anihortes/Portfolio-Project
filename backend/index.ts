@@ -1,6 +1,6 @@
 import bodyParser from 'body-parser'
 import cors from 'cors'
-import express, { NextFunction, Request, Response } from 'express'
+import express, { NextFunction, Request, response, Response } from 'express'
 
 const app = express()
 const router = express.Router()
@@ -17,7 +17,7 @@ app.listen(port, () => {
 })
 
 router.get('/', (request: Request, response: Response) => {
-  response.json({ info: 'Karta Software Node.js, Express, and Postgres API' })
+  response.json({ info: 'temp string' })
 })
 
 router.get('/logo', async (request: Request, response: Response) => {
@@ -30,6 +30,29 @@ type User = {
   lastName: string
   email: string
 }
+
+type Note = {
+  id: number
+  day: number
+  month: number
+  comments: string
+}
+
+const notes: Note[] = [
+  {
+    id: 0,
+    day: 20,
+    month: 1,
+    comments: "notes"
+  },
+
+  {
+    id: 1,
+    day: 29,
+    month: 2,
+    comments: "other notes"
+  }
+]
 
 const users: User[] = [
   {
@@ -51,6 +74,9 @@ const users: User[] = [
     email: 'bob.brown@gmail.com'
   },
 ]
+
+router.get('/notes', getNotes)
+
 
 router.post('/user', createUser)
 router.delete('/user/:userID', deleteUser)
@@ -97,6 +123,10 @@ async function getUser(request: Request, response: Response, next: NextFunction)
 
 async function getUsers(request: Request, response: Response, next: NextFunction) {
   response.status(200).json(users)
+}
+
+async function getNotes(request: Request, response: Response, next: NextFunction) {
+  response.status(200).json(notes)
 }
 
 async function updateUser(request: Request, response: Response, next: NextFunction) {
