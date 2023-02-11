@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpEvent, HttpHeaders, HttpResponse } from '@angular/common/http'
 import { ThisReceiver } from '@angular/compiler';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
 
 const options = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 }
 
-type Note = {
+export type Note = {
   id: number
   day: number
   month: number
@@ -17,10 +19,7 @@ type Note = {
   providedIn: 'root'
 })
 export class NotesService {
-  private _httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' })}
   constructor(private _http: HttpClient){}
-
-
 
   createNote(note: Note) {
     const url = `http://localhost:3000/note/`
